@@ -1,0 +1,2 @@
+# .netcore
+.netcore bootcamp repo
