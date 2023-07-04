@@ -1,0 +1,87 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        // //1.Soru
+        // Console.Write("Bir sayı yazınız:");
+        // int sayiAdeti = int.Parse(Console.ReadLine());
+        // int[] sayiDizisi = new int[sayiAdeti];
+        //     for (int i=0; i<sayiAdeti; i++)
+        //     {
+        //         Console.Write($"{i+1}. sayıyı giriniz:");
+        //         sayiDizisi[i] = int.Parse(Console.ReadLine());
+        //     }
+        //     Console.Write("Çift sayılar: ");
+        //     for(int i=0; i<sayiAdeti; i++){
+        //         if(sayiDizisi[i]%2 == 0) {
+        //             Console.Write(sayiDizisi[i]);
+        //         }
+        //     }
+
+        // //2.Soru
+        // Console.Write ("İki tane pozitif sayı girin: ");
+        // int n = int.Parse(Console.ReadLine());
+        // int m = int.Parse(Console.ReadLine());
+        // Console.Write (n + " adet pozitif sayı girin: ");
+        // int[] sayiDizisi = new int [n];
+        // for(int i=0; i<n; i++){
+        //     sayiDizisi[i] = int.Parse(Console.ReadLine());
+        // }
+        // Console.Write("Yazdığınız " + n + " tane sayıdan " + m +" ile bölünebilenler: ");
+        // for(int j =0; j<n ; j++){
+        //     if(sayiDizisi[j]%m == 0){
+        //         Console.Write(sayiDizisi[j] + " ");
+        //     }
+        // }
+
+        //3.Soru
+        // Console.Write("Pozitif bir sayı girin: ");
+        // int n = int.Parse(Console.ReadLine());
+        // Console.Write (n + " adet kelime yazın: ");
+        // string[] kelimeler = new string[n];
+        //  for (int i = 1; i < n+1; i++)
+        //     {
+        //         kelimeler[i - 1] = Console.ReadLine();
+        //     }
+
+        //     Array.Reverse(kelimeler);
+
+        //         Console.WriteLine("Kelimelerin ters sıralanışı: ");
+
+        //     foreach (var kelime in kelimeler)
+        //     {
+        //         Console.WriteLine(kelime);
+        //     }
+
+        //4.Soru
+        Console.Write("Bir cümle yazın: ");
+        string cumle = Console.ReadLine();
+        cumle=cumle.ToLower();
+        int karakterSayisi = cumle.Count();
+
+        string harfler = "abcçdefgğhıijklmnoöprsştuüvyzxwq";
+
+            int harfSayisi = 0;
+        
+        for (int i = 0; i < karakterSayisi; i++)
+            {
+                if (harfler.Contains(cumle[i]))
+                {
+                    harfSayisi++;
+                }
+            }
+
+            Console.WriteLine("Cümledeki harf sayısı: "+harfSayisi);
+
+
+            string[] kelime = cumle.Split(' ');
+
+            Console.WriteLine("Cümledeki kelime sayısı: "+kelime.Length);
+
+    }
+}
